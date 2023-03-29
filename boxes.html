@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .MainBox {
+            width: 410px;
+            height: 350px;
+            border: 1px solid green;
+            position: relative;
+        }
+
+        .box {
+            position: absolute;
+            width: 350px;
+            height: 260px;
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 1);
+            padding: 40px 25px 25px;
+            background: linear-gradient(to right bottom, #01a0fb, #09c289);
+            border-radius: 10px;
+            margin-bottom: 40px;
+            transition: .34s;
+        }
+
+        .box:nth-child(2) {
+            background: white;
+        }
+
+        .box h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .box p {
+            color: #666666;
+        }
+
+        .box a img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .MainBox:hover .box:nth-child(2) {
+            opacity: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="MainBox">
+        <div class="box">
+            <div class="box-wrapper">
+                <a href="#"><img src="./images/coding.png" alt=""></a>
+                <h3 class="about-title clr">Advanced Programming</h3>
+                <p class="about-desc clr">Find out what's working and what's not. Dig your data to find</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-wrapper">
+                <a href="#"><img src="./images/coding.png" alt=""></a>
+                <h3 class="about-title clr">Advanced Programming</h3>
+                <p class="about-desc clr">Find out what's working and what's not. Dig your data to find</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
