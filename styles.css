@@ -111,12 +111,6 @@ body {
   transition: all 0.3s linear 0s;
 }
 
-@media (max-width: 380px) {
-  .sidebar {
-    width: 270px;
-  }
-}
-
 ul.nav-links {
   margin: 0;
   padding: 0;
@@ -129,8 +123,7 @@ ul.nav-links li a {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 20px;
-  line-height: 1.7;
+  margin-bottom: 15px;
   display: inline-block;
   text-decoration: none;
 }
@@ -165,56 +158,6 @@ ul.social-links li a {
   top: 0px;
   color: #fff;
   cursor: pointer;
-}
-
-@media (max-width: 980px) {
-  .menu-items {
-    display: none;
-  }
-
-  .nav-header {
-    display: block;
-  }
-}
-
-@media (min-width: 981px) {
-  .sidebar {
-    display: none;
-  }
-}
-
-@media (max-width: 1080px) {
-  .bottom-row ul li {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1020px) {
-  .bottom-row ul li {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 600px) {
-  ul.nav-links li a {
-    line-height: 1;
-  }
-  .header .top-row {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 468px) {
-  .header {
-    text-align: center;
-  }
-
-  .header .top-left {
-    margin: auto;
-  }
-  .header .top-left a {
-    display: block;
-  }
 }
 
 .bottom-row ul {
@@ -354,40 +297,7 @@ ul.social-links li a {
   }
 }
 
-@media (max-width: 700px) {
-  .hero-right img {
-    width: 120px;
-  }
-
-  .hero-left {
-    width: 100%;
-  }
-  .hero-left h1 {
-    font-size: 40px;
-  }
-
-  .hero-left p {
-    font-size: 20px;
-  }
-  .hero-left .btns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .hero-left .btns button {
-    font-size: 13px;
-    padding: 10px 21px;
-  }
-}
-
-@media (max-width: 500px) {
-  .hero-right {
-    display: none;
-  }
-}
-
 /* NEURON ABOUT SECTION */
-
 .about {
   padding: 1px 80px;
   color: black;
@@ -404,12 +314,6 @@ ul.social-links li a {
   align-items: center;
   padding: 1px 10px;
   text-align: center;
-}
-
-@media (max-width: 1320px) {
-  .about .container {
-    flex-direction: column;
-  }
 }
 
 .about .container .about__left {
@@ -1513,4 +1417,106 @@ ul > li {
 .footer-bottom p {
   text-align: center;
   color: #666666;
+}
+
+/*! MEDIA QUERIES */
+@media (max-width: 380px) {
+  .sidebar {
+    width: 270px;
+  }
+}
+
+@media (max-width: 468px) {
+  .header {
+    text-align: center;
+  }
+  
+  .header .top-left {
+    margin: auto;
+  }
+  .header .top-left a {
+    display: block;
+  }
+  .hero-left h1 {
+    font-size: 30px !important;
+  }
+
+  .hero-left p {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-right {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  ul.nav-links li a {
+    line-height: 1;
+  }
+  .header .top-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-right img {
+    width: 120px;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+  .hero-left h1 {
+    font-size: 40px;
+  }
+
+  .hero-left p {
+    font-size: 20px;
+  }
+  .hero-left .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-left .btns button {
+    font-size: 13px;
+    padding: 10px 21px;
+  }
+}
+
+@media (max-width: 980px) {
+  .menu-items {
+    display: none;
+  }
+  .nav-header {
+    display: block;
+  }
+}
+
+@media (min-width: 981px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
+  .bottom-row ul li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .bottom-row ul li {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 1320px) {
+  .about .container {
+    flex-direction: column;
+  }
 }
